@@ -10,7 +10,6 @@ class Actor < ActiveRecord::Base
   def list_roles
     #self.shows.each do |show|
     s = self.shows
-    i = self.actor_id
     c = Character.find_by(actor_id: 1)
 
       binding.pry
