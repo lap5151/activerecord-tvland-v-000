@@ -3,8 +3,7 @@ class Show < ActiveRecord::Base
   belongs_to :network
 
   def build_network(network)
-    #self.network.call_letters = network.name
-    binding.pry
+    self.network = network.name
   end
 
 end
