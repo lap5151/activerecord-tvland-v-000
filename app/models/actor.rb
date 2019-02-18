@@ -12,7 +12,6 @@ class Actor < ActiveRecord::Base
     characters = []
     self.shows.each do |show|
       all_shows << show.name
-      characters << show.actor_id
     end
     binding.pry
     c = Character.find_by(actor_id: 1)
