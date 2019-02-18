@@ -8,11 +8,14 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    #self.shows.each do |show|
-    s = self.shows
+    all_shows = []
+    self.shows.each do |show|
+      all_shows << show.name
+    end
+    binding.pry
     c = Character.find_by(actor_id: 1)
 
-      binding.pry
+      
   end
 
 
