@@ -4,7 +4,6 @@ class Show < ActiveRecord::Base
 
   def build_network(arg)
     #self.network.call_letters = network.name
-    binding.pry
   end
 
 end
