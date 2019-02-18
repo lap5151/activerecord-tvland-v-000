@@ -8,7 +8,8 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    self.characters
+    #self.shows.each do |show|
+      Character.find_by(character_id: 1)
   end
 
 
