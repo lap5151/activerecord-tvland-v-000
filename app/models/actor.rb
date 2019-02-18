@@ -16,7 +16,7 @@ class Actor < ActiveRecord::Base
       role =  Character.find_by(show_id: show.id)
       role_name = role.name
       puts "#{role_name} - #{show_name} "
-      #binding.pry
+      binding.pry
     end
     #binding.pry
     #c = Character.where(show_id: 1)
