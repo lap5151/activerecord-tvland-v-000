@@ -7,7 +7,7 @@ class Character < ActiveRecord::Base
   end
 
   def network
-    self.network
+    #self.network
     binding.pry
   end
 
