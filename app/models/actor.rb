@@ -8,18 +8,20 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    #all_shows = []
+    roles = []
     #characters = []
     self.shows.each do |show|
       #all_shows << show.name
       show_name = show.name
       role =  Character.find_by(show_id: show.id)
       role_name = role.name
-      "#{role_name} - #{show_name}"
+      roles << "#{role_name} - #{show_name}"
       #binding.pry
     end
     #binding.pry
     #c = Character.where(show_id: 1)
+    roles
+    binding.pry
 
 
   end
