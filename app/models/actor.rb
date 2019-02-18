@@ -13,7 +13,8 @@ class Actor < ActiveRecord::Base
     self.shows.each do |show|
       #all_shows << show.name
       show_name = show.name
-      role_name =  Character.where(show_id: show.id)
+      role =  Character.find_by(show_id: show.id)
+      role_name = role.name
       binding.pry
     end
     #binding.pry
