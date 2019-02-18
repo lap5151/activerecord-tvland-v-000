@@ -11,11 +11,12 @@ class Actor < ActiveRecord::Base
     all_shows = []
     characters = []
     self.shows.each do |show|
-      all_shows << show.name
-      binding.pry
+      #all_shows << show.name
+      show.name + "-" + Character.where(show_id: show.id)
+      #binding.pry
     end
     #binding.pry
-    c = Character.find_by(actor_id: 1)
+    #c = Character.where(show_id: 1)
 
 
   end
