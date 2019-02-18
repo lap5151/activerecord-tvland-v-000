@@ -15,7 +15,7 @@ class Actor < ActiveRecord::Base
     binding.pry
     c = Character.find_by(actor_id: 1)
 
-      
+
   end
 
 
