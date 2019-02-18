@@ -22,8 +22,6 @@ class Actor < ActiveRecord::Base
     #c = Character.where(show_id: 1)
     roles
     binding.pry
-
-
   end
 
 
