@@ -11,6 +11,7 @@ class Actor < ActiveRecord::Base
     #self.shows.each do |show|
     cid = Character.where(actor_id: 1)
       cid
+      binding.pry
   end
 
 
