@@ -8,8 +8,8 @@ class Actor < ActiveRecord::Base
   end
 
   def list_roles
-    all_shows = []
-    characters = []
+    #all_shows = []
+    #characters = []
     self.shows.each do |show|
       #all_shows << show.name
       show.name + "-" + Character.where(show_id: show.id)
