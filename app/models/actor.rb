@@ -9,7 +9,7 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     #self.shows.each do |show|
-    cid =   Actor.find_by(actor_id: 1)
+    cid =   Actors.find_by(actor_id: 1)
       binding.pry
   end
 
