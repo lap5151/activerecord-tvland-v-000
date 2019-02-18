@@ -12,6 +12,7 @@ class Actor < ActiveRecord::Base
     characters = []
     self.shows.each do |show|
       all_shows << show.name
+      binding.pry
     end
     binding.pry
     c = Character.find_by(actor_id: 1)
