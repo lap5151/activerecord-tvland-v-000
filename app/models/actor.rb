@@ -12,7 +12,7 @@ class Actor < ActiveRecord::Base
     s = self.shows
     i = self.actor_id
     c = Character.find_by(actor_id: 1)
-    
+
       binding.pry
   end
 
