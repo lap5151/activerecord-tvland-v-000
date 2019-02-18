@@ -9,8 +9,10 @@ class Actor < ActiveRecord::Base
 
   def list_roles
     all_shows = []
+    characters = []
     self.shows.each do |show|
       all_shows << show.name
+      characters << show.character
     end
     binding.pry
     c = Character.find_by(actor_id: 1)
