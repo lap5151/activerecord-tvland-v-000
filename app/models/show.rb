@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
   has_many :networks
 
   def build_network(network)
-    binding.pry
+    self.networks
   end
 
 end
